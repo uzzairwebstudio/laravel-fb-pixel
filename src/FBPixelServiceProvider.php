@@ -36,7 +36,7 @@ class FBPixelServiceProvider extends ServiceProvider
         // View Component file
         $this->publishes([
             __DIR__ . '/View' => app_path('/View')
-        ], 'uws-fb-pixel-app');
+        ], 'uws-fb-pixel-view-component');
 
     }
 }
