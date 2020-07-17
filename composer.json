@@ -1,0 +1,37 @@
+{
+    "name": "uzzairwebstudio/laravel-fb-pixel",
+    "description": "FB Pixel Laravel component. You can include  it in any Blade files.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uzzair Web Studio",
+            "email": "uzzairwebstudio@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "UzzairWebStudio\\FBPixel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UzzairWebStudio\\FBPixel\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UzzairWebStudio\\FBPixel\\FBPixelServiceProvider"
+            ],
+            "aliases": {
+                "FBPixel": "UzzairWebStudio\\FBPixel\\FBPixelFacade"
+            }
+        }
+    }
+}
