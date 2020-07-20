@@ -3,6 +3,9 @@ This package offers you FB Pixel script as Laravel 7 component. You can include 
 Once you installed, you can do stuff like this;
 ```php
 <x-uws-fb-pixel pixel-id="123456789" />
+<script>
+fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+</script>
 ```
 
 ## Installation
